@@ -11,11 +11,11 @@ if os.path.exists(".env"):
     load_dotenv(".env")
 
 # -------------CONFIGS--------------------
-API_ID = int(os.getenv("API_ID", "29308061"))
+API_ID = int(os.getenv("API_ID", "23491399"))
 if not API_ID:
    print("SpamX [INFO]: You didn't fill API_ID var!")
    sys.exit()
-API_HASH = os.getenv("API_HASH", "462de3dfc98fd938ef9c6ee31a72d099")
+API_HASH = os.getenv("API_HASH", "2b7f62a2c17cdb83427074b9615cdb90")
 if not API_HASH:
    print("SpamX [INFO]: You didn't fill API_HASH var!")
    sys.exit()
@@ -63,7 +63,7 @@ if not OWNER_ID:
 SUDO_USERS = os.getenv("SUDO_USERS", "6762113050 6919199044")
 
 #Optional
-DATABASE_URL = os.getenv("DATABASE_URL", None)
+DATABASE_URL = os.getenv("DATABASE_URL", "7504344381")
 if DATABASE_URL:
    os.system("pip3 install sqlalchemy==1.3.20")
    os.system("pip3 install psycopg2-binary") 
